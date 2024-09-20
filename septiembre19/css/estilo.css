@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "menu menu menu"
+        "contenido1 contenido2 contenido2"
+        "footer footer footer"
+        "facebook redes youtube";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto 1fr auto auto;
+    gap: 10px;
+    height: 100vh;
+    border: 5px solid darkgreen;
+}
+
+header {
+    grid-area: header;
+    background-color: limegreen;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+nav {
+    grid-area: menu;
+    background-color: darkseagreen;
+    text-align: center;
+    padding: 15px;
+}
+
+.contenido1 {
+    grid-area: contenido1;
+    background-color: brown;
+    padding: 20px;
+}
+
+.contenido2 {
+    grid-area: contenido2;
+    background-color: darkred;
+    padding: 20px;
+    color: white;
+}
+
+.name {
+    background-color: cyan;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.hello {
+    background-color: orange;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: purple;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.facebook {
+    grid-area: facebook;
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+}
+
+.redes {
+    grid-area: redes;
+    background-color: cyan;
+    text-align: center;
+    padding: 10px;
+}
+
+.youtube {
+    grid-area: youtube;
+    background-color: blue;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
